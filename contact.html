@@ -21,7 +21,49 @@
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/custom-animation.css">
    <link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="rtl.css">
+   <link rel="stylesheet" href="rtl.css">
+   <style>
+         .cn-contact-2-content {
+      position: relative;
+      color: white; /* text visible on image */
+      padding: 30px;
+      border-radius: 12px;
+      overflow: hidden;
+      }
+
+      .cn-contact-2-content::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.30; /* 30% opacity */
+      z-index: 0;
+      }
+
+      .cn-contact-2-content {
+      position: relative;
+      color: white;
+      padding: 30px;
+      border-radius: 12px;
+      overflow: hidden;
+      min-height: 430px;  /* increase card height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* center text vertically */
+      }
+
+      /* Kolkata background */
+      .cn-contact-2-content.kolkata::before {
+      background-image: url("assets/img/inner-contact/contact/howrah.avif");
+      }
+
+      /* Bhubaneshwar background */
+      .cn-contact-2-content.bhubaneshwar::before {
+      background-image: url("assets/img/inner-contact/contact/konark.avif");
+      }
+
+   </style>
 </head>
 
 <body>
@@ -661,39 +703,27 @@
                   <div class="container container-1530">
                      <div class="row">
                         <div class="col-xl-5 col-lg-5 col-md-6 mb-30">
-                           <div class="cn-contact-2-content text-center">
-                              <h4 class="cn-contact-2-title">Kolkata</h4>
-                              <div class="cn-contact-2-thumb d-flex justify-content-center">
-                                 <img src="assets/img/inner-contact/contact/contact-1.jpg" alt="">
-                                 <img src="assets/img/inner-contact/contact/contact-2.jpg" alt="">
+                              <div class="cn-contact-2-content text-center kolkata">
+                                 <h4 class="cn-contact-2-title">Kolkata</h4>
+                                 <div class="cn-contact-2-info-details">
+                                    <a class="pb-15">C26/99 sector 5, saltlake. Kolkata, westbengal</a>
+                                    <a href="mailto:abhi@codexcrackers.in">abhi@codexcrackers.in</a>
+                                    <a href="tel:(+91)76001726">(+91) 76001726</a>
+                                 </div>
                               </div>
-                              <div class="cn-contact-2-info-details">
-                                 <a class="pb-15" >
-                                    C26/99 sector 5, saltlake.
-                                    Kolkata,westbengal
-                                 </a>
-                                 <a href="mailto:abhi@codexcrackers.in">abhi@codexcrackers.in</a>
-                                 <a href="tel:(+91)76001726">(+91) 76001726</a>
-                              </div>
-                           </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
-                           <div class="cn-contact-2-content mt-60 text-center">
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 mb-3">
+                           <div class="cn-contact-2-content mt-60 text-center bhubaneshwar">
                               <h6 class="cn-contact-2-title">Bhubaneshwar</h6>
-                              <div class="cn-contact-2-thumb d-flex justify-content-center">
-                                 <img src="assets/img/inner-contact/contact/contact-3.jpg" alt="">
-                                 <img src="assets/img/inner-contact/contact/contact-4.jpg" alt="">
-                              </div>
                               <div class="cn-contact-2-info-details">
-                                 <a class="pb-15" >
-                                    86/90 jayadevvihar, Bhubaneshwar.
-                                    Odisha
-                                 </a>
+                                 <a class="pb-15">86/90 jayadevvihar, Bhubaneshwar. Odisha</a>
                                  <a href="mailto:kishan@codexcrackers.in">kishan@codexcrackers.in</a>
                                  <a href="tel:(+91)76001726">(+91) 76001726</a>
                               </div>
                            </div>
                         </div>
+
                         
                      </div>
                   </div>
