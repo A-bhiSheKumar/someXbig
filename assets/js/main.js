@@ -3591,20 +3591,7 @@ function tp_settings_append($x){
        </div>
 
        <!--SETTINGS -->
-       <div class="tp-theme-settings">
-          <div class="tp-theme-settings-wrapper">
-             <div class="tp-theme-settings-open">
-                <button class="tp-theme-settings-open-btn">
-                   <span class="tp-theme-settings-gear">
-                      <i class="fa-light fa-gear"></i>
-                   </span>
-                   <span class="tp-theme-settings-close">
-                      <i class="fa-regular fa-xmark"></i>
-                   </span>
-                </button>
-             </div>
-          </div>
-       </div>
+       
     </div>
  </div>`;
 
